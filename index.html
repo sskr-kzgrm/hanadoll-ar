@@ -30,7 +30,11 @@
     
     <!-- 浮かび上がらせる画像。positionやscaleはここで調整する -->
     <!-- planeは板状のオブジェクト。初期状態では縦横1メートルの比率となる -->
-    <a-plane src="./test.png" position="0 0 0" height="1" width="1" transparent="true" opacity="1"></a-plane>
+    <!--<a-plane src="./test.png" position="0 0 0" height="1" width="1" transparent="true" opacity="1"></a-plane>-->
+    
+    <a-entity mindar-image-target="targetIndex: 0">
+      <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+    </a-entity>
     
   </a-scene>
 </body>
