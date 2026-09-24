@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARテスト</title>
+  <!-- Mind-ARとA-Frameを読み込む -->
+  <script src="https://aframe.io" />
+  <script src="https://jsdelivr.net />
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ARシーンの設定。imageTargetSrcでステップ1の指定ファイルを読み込む -->
+  <a-scene mindar-image="imageTargetSc: ./targets.mind; filterMinCF:0.001; filterBeta:10;"
+    color-space="sRGB" renderer="colorManagement: true; physicallyCorrectLights"
+    vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+    
+    <!-- ターゲットを見つけたときに表示するコンテンツ -->
+    <!-- targetIndex: 0 は1枚目の画像を意味する -->
+    
+    <!-- 浮かび上がらせる画像。positionやscaleはここで調整する -->
+    <!-- planeは板状のオブジェクト。初期状態では縦横1メートルの比率となる -->
+    <a-plane src="./test.png" position="0 0 0" height="1" width="1" transparent="true" opacity="1"></a-plane>
+    
+  </a-scene>
+</body>
+</html>
