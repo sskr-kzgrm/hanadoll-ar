@@ -4,47 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARテスト</title>
+  <link rel="stylesheet" href="./style.css">
   <!-- Mind-ARとA-Frameを読み込む -->
   <!--<script src="https://aframe.io"></script>-->
   <!--<script src="https://jsdelivr.net"></script>-->
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-    }
-  </style>
+  <script src="./script.js" defer></script>
 </head>
 
-<body>
+<body class="camera-pending">
+  <p class="spoiler-warning">
+    この機能は華Doll* 3rd season までのネタバレを含みます。<br>ネタバレなしで本編を楽しみたい方はお気をつけください
+  </p>
+  <p id="permission-status" class="permission-status">カメラの許可を確認しています...</p>
+
+  <section id="camera-error" class="camera-error" role="alert" hidden>
+    <p id="camera-error-message"></p>
+  </section>
+
+  <a class="camera-fallback-link" href="./image.html" hidden>カメラ機能を使用しない</a>
+
   <!-- ARシーンの設定。imageTargetSrcでステップ1の指定ファイルを読み込む -->
-  <a-scene mindar-image="imageTargetSrc: ./targets.mind; filterMinCF:0.01; filterBeta:100;"
+  <a-scene mindar-image="autoStart: false; imageTargetSrc: ./image/targets.mind; filterMinCF:0.01; filterBeta:100;"
     color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
     vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     
-    <!-- ターゲットを見つけたときに表示するコンテンツ -->
-    <!-- targetIndex: 0 は1枚目の画像を意味する -->
-    
-    <!-- 浮かび上がらせる画像。positionやscaleはここで調整する -->
-    <!-- planeは板状のオブジェクト。初期状態では縦横1メートルの比率となる -->
-    <!--<a-plane src="./test.png" position="0 0 0" height="1" width="1" transparent="true" opacity="1"></a-plane>-->
-        
     <a-assets>
-      <img id="card" src="./test.png" />
-      <!--<a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>-->
+      <img id="anthos-member-1" src="./image/Anthosメンバー1.png" />
+      <img id="anthos-member-2" src="./image/Anthosメンバー2.png" />
+      <img id="louloudi-members" src="./image/Louloudiメンバー.png" />
+      <img id="relationship-chart" src="./image/相関図.png" />
     </a-assets>
-    
+
     <a-entity mindar-image-target="targetIndex: 0">
-      <!-- 画面に青い四角を表示する
-      <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-      -->
-      <a-plane src="#card" position="0 0 0" height="1" width="0.552" rotation="0 0 0"></a-plane>
+      <a-plane src="#anthos-member-1" material="position="0 0 0" height="1" width="0.705"></a-plane>
     </a-entity>
-    
-    
+
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-plane src="#anthos-member-2" material="position="0 0 0" height="1" width="0.705"></a-plane>
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 2">
+      <a-plane src="#louloudi-members" material="position="0 0 0" height="1" width="0.705"></a-plane>
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 3">
+      <a-plane src="#relationship-chart" material="position="0 0 0" height="1" width="0.705"></a-plane>
+    </a-entity>
   </a-scene>
 </body>
 </html>
