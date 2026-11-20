@@ -1,4 +1,4 @@
-// youtubeIdをキーにして、ファンの選曲と楽曲情報を紐づけます。
+// youtubeIdをキーにして、ファンの選曲と楽曲情報を紐づけ
 const songs = [
   // { title: "曲名", artist: "アーティスト名", youtubeId: "YouTube動画ID" },
   { title: "BIRTH", artist: "Anthos", youtubeId: "-PTnAtnlZdw" },
@@ -83,9 +83,9 @@ const songs = [
   { title: "Clockwork Flowers", artist: "Anthos", youtubeId: "kCFvoYIJlYQ" },
 ];
 
-// 1人分を1セットとして登録します。songIdsにはsongs内のyoutubeIdを指定してください。
+// 1人分を1セットとして登録。songIdsにはsongs内のyoutubeIdを指定する。
 const fanSelections = [
-  // { fan: "ファン名", songIds: ["YouTube動画ID1", "YouTube動画ID2"] },
+  // { fan: "アルファベット順番に", songIds: ["YouTube動画ID1", "YouTube動画ID2"] },
   { fan: "muraki",
     songIds: [
       "a0t23xNWsyE", // Silent Message
