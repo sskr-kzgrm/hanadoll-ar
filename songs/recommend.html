@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ファンが選んだ5選</title>
+  <link rel="stylesheet" href="./songs.css">
+  <script src="./songs-data.js" defer></script>
+  <script src="./songs-page.js" defer></script>
+</head>
+<body data-page="recommend">
+  <main class="songs-page">
+    <header class="page-header">
+      <a class="page-nav-link" href="./random.html">ランダム楽曲紹介へ</a>
+      <h1>ファンが選んだ5選</h1>
+      <p>ファンの皆さんが選んだ5曲の中から、セットをランダムに紹介します。</p>
+    </header>
+    <p id="selection-label" class="selection-label" aria-live="polite"></p>
+    <p id="page-message" class="page-message" role="status" hidden></p>
+    <ol id="song-list" class="song-list"></ol>
+  </main>
+</body>
+</html>

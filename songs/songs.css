@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f4f6;
+  color: #2d252a;
+  font-family: sans-serif;
+}
+
+.songs-page {
+  width: min(100% - 32px, 900px);
+  margin: 0 auto;
+  padding: 32px 0 56px;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-nav-link {
+  color: #8b426b;
+}
+
+.page-header h1 {
+  margin: 20px 0 8px;
+  font-size: clamp(1.7rem, 5vw, 2.4rem);
+}
+
+.page-header p,
+.song-artist {
+  color: #665c62;
+  line-height: 1.6;
+}
+
+.selection-label {
+  font-weight: 700;
+}
+
+.page-message {
+  padding: 14px 16px;
+  border-left: 4px solid #8b426b;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.reroll-button {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #8b426b;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.reroll-button:hover:not(:disabled) {
+  background: #713456;
+}
+
+.reroll-button:focus-visible {
+  outline: 3px solid #2d252a;
+  outline-offset: 3px;
+}
+
+.reroll-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.song-list {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.song-card {
+  min-width: 0;
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 14px rgb(45 37 42 / 8%);
+}
+
+.song-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.song-artist {
+  margin: 6px 0 14px;
+}
+
+.song-card iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
