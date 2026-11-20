@@ -86,6 +86,15 @@ const songs = [
 // 1人分を1セットとして登録します。songIdsにはsongs内のyoutubeIdを指定してください。
 const fanSelections = [
   // { fan: "ファン名", songIds: ["YouTube動画ID1", "YouTube動画ID2"] },
+  { fan: "muraki",
+    songIds: [
+      "a0t23xNWsyE", // Silent Message
+      "inBQejmHRlQ", // Immortal Tale
+      "bKqqCa7WVt4", // Answer.
+      "f8_-1XsZYBk", // Dead Sea Note
+      "0_aNYEZNp_k"  // Fall leaves after leaves fall
+    ]
+  },
   { fan: "A",
     songIds: [
       "ZjJlw7olLQE", // Juliet
