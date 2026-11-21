@@ -22,7 +22,7 @@ body.camera-pending a-scene {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
   font: 10px/1.35 sans-serif;
@@ -36,9 +36,9 @@ body.camera-pending a-scene {
   z-index: 10000;
   display: grid;
   place-content: center;
-  gap: 16px;
+  gap: 1rem;
   margin: 0;
-  padding: 24px;
+  padding: 1.5rem;
   color: #222;
   font: 18px sans-serif;
   text-align: center;
@@ -46,15 +46,15 @@ body.camera-pending a-scene {
 
 .camera-fallback-link {
   position: fixed;
-  top: 96px;
-  right: 16px;
+  top: 6rem;
+  right: 1rem;
   z-index: 10002;
-  padding: 10px 14px;
+  padding: 0.6rem 0.9rem;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   background: #222;
   color: #fff;
-  font: 16px sans-serif;
+  font: 1rem sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -64,8 +64,8 @@ body.camera-pending a-scene {
 }
 
 .camera-fallback-link:focus-visible {
-  outline: 3px solid #000;
-  outline-offset: 3px;
+  outline: 0.2rem solid #000;
+  outline-offset: 0.2rem;
 }
 
 .image-page {
@@ -73,17 +73,17 @@ body.camera-pending a-scene {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 16px;
+  gap: 1rem;
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 80px 24px 24px;
+  padding: 5rem 1.5rem 1.5rem;
   background: #f5f5f5;
 }
 
 .fallback-gallery {
   display: grid;
-  gap: 24px;
-  width: min(100%, 560px);
+  gap: 1.5rem;
+  width: min(100%, 35rem);
   margin: 0;
   padding: 0;
   list-style: none;
