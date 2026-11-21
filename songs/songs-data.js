@@ -284,4 +284,13 @@ const fanSelections = [
       "VZfHv2AlGOg"  // Cartain Call
     ]
   },
+  { fan: "V",
+    songIds: [
+      "inBQejmHRlQ", // Immortal Tale
+      "NrSMfZJ2Tvc", // Umbilical Lover
+      "PA-DOTUHsWU", // The Other Side
+      "T_0CxQHMUyI", // Regret
+      "djnEPkBZtII"  // Fake Veil
+    ]
+  },
 ];
