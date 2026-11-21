@@ -275,4 +275,13 @@ const fanSelections = [
       "cJ9kZ8cFavM"  // by night
     ]
   },
+  { fan: "U",
+    songIds: [
+      "NrSMfZJ2Tvc", // Umbilical Lover
+      "T_0CxQHMUyI", // Regret
+      "9HG-p55ZtjE", // Wilting
+      "QLYT9V1Tzm8", // Spectac1e
+      "VZfHv2AlGOg"  // Cartain Call
+    ]
+  },
 ];
