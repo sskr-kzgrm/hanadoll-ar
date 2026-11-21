@@ -19,12 +19,13 @@ body.camera-pending a-scene {
   top: 0;
   left: 0;
   z-index: 10003;
+  box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 1rem;
+  padding: 8px 12px;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
-  font: 7.5px sans-serif;
+  font: 10px/1.35 sans-serif;
   text-align: center;
 }
 
@@ -45,7 +46,7 @@ body.camera-pending a-scene {
 
 .camera-fallback-link {
   position: fixed;
-  top: 76px;
+  top: 96px;
   right: 16px;
   z-index: 10002;
   padding: 10px 14px;
