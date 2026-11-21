@@ -257,4 +257,22 @@ const fanSelections = [
       "dzEff8xmxGE"  // Hopeless Ark
     ]
   },
+  { fan: "S",
+    songIds: [
+      "GnfT4U0XvMI", // JAYWALK
+      "b92VyDz5LJ0", // Raughing loughing
+      "VqPxNM47qLA", // Addictive Whispering
+      "inBQejmHRlQ", // Immortal Tale
+      "QLYT9V1Tzm8"  // Spectac1e
+    ]
+  },
+  { fan: "T",
+    songIds: [
+      "T_0CxQHMUyI", // Regret
+      "AMYJAFFqvXo", // The Place of Fate
+      "inBQejmHRlQ", // Immortal Tale
+      "dzEff8xmxGE", // Hopeless Ark
+      "cJ9kZ8cFavM"  // by night
+    ]
+  },
 ];
