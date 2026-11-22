@@ -293,4 +293,13 @@ const fanSelections = [
       "djnEPkBZtII"  // Fake Veil
     ]
   },
+  { fan: "W",
+    songIds: [
+      "gAG-ZPqmsu0", // Mirage in Mirage
+      "MAEJ5PgZzyQ", // Invisible Cross
+      "0_aNYEZNp_k", // Fall leaves after leaves fall
+      "a0t23xNWsyE", // Silent Message
+      "bKqqCa7WVt4"  // Answer.
+    ]
+  },
 ];
